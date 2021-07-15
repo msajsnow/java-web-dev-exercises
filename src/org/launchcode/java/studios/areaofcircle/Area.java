@@ -4,14 +4,17 @@ import java.util.Scanner;
 public class Area {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        System.out.println(input);
-        float num_input = Float.parseFloat(input);
-        float answer = (float) (num_input * num_input * Math.PI);
-        System.out.println(answer);
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter the circle radius: ");
+        String userInput = input.nextLine();
+
+        double radius = Double.parseDouble(userInput);
+
+        System.out.println("The area of a circle with radius " + radius + " is: " + calculateCircleArea(radius));
 
     }
 
-
+    public static double calculateCircleArea(double userRadius) {
+        return Math.PI * userRadius * userRadius;
+    }
 }
