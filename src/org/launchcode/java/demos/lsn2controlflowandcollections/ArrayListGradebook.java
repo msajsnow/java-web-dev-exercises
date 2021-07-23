@@ -1,12 +1,26 @@
 package org.launchcode.java.demos.lsn2controlflowandcollections;
 
+import exercises.ArrListPracticeNum;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ArrayListGradebook {
 
     public static void main(String[] args) {
+        ArrayList<Integer> myAscending = new ArrayList<>();
+        myAscending.add(0);
+        myAscending.add(1);
+        myAscending.add(2);
+        myAscending.add(3);
+        myAscending.add(4);
+        myAscending.add(5);
+        myAscending.add(6);
 
+
+
+        int resultOfSumEven = ArrListPracticeNum.sumEven(myAscending);
+        System.out.println(resultOfSumEven);
         ArrayList<String> students = new ArrayList<>();
         ArrayList<Double> grades = new ArrayList<>();
         Scanner input = new Scanner(System.in);
